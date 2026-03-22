@@ -1,12 +1,10 @@
-generate a proper read me.md file
-
 <div align="center">
 
 # 🫁 TBScan AI
 
 ### Tuberculosis Detection from Chest X-Ray using Deep Learning & RAG
 
-*Upload a chest X-ray. Get an AI-powered TB screening result, visual explanation, and WHO-backed medical guidance — instantly.*
+_Upload a chest X-ray. Get an AI-powered TB screening result, visual explanation, and WHO-backed medical guidance — instantly._
 
 ---
 
@@ -21,7 +19,7 @@ generate a proper read me.md file
 
 ---
 
-> **Project Status:** 🔴 Not Started
+> **Project Status:** In Development
 
 </div>
 
@@ -35,7 +33,7 @@ explainable AI, and a Retrieval-Augmented Generation (RAG) pipeline to deliver n
 a prediction — but a visual explanation and structured medical guidance grounded in real
 WHO treatment guidelines.
 
-The project is fully containerised with Docker, deployed free on HuggingFace Spaces, and
+The project will be fully containerised with Docker, deployed free on HuggingFace Spaces, and
 accessible to anyone in the world via a simple web link with zero infrastructure cost.
 
 ---
@@ -52,14 +50,14 @@ accessible to anyone in the world via a simple web link with zero infrastructure
 
 ## 🎯 Project Goals
 
-| Goal | Description |
-|---|---|
-| **TB Screening** | Binary classification — Normal vs Tuberculosis — from chest X-ray images |
-| **Explainability** | Grad-CAM heatmap shows which lung regions influenced the model's decision |
-| **Medical Advisory** | RAG pipeline retrieves WHO guidelines and generates structured medication guidance |
-| **Full-Stack ML** | End-to-end pipeline covering data, model, API, UI, containerisation, and deployment |
-| **Free Deployment** | Entire app hosted publicly at zero cost on HuggingFace Spaces |
-| **Portfolio Quality** | Demonstrates ML, NLP, backend, frontend, and DevOps skills in one unified project |
+| Goal                  | Description                                                                         |
+| --------------------- | ----------------------------------------------------------------------------------- |
+| **TB Screening**      | Binary classification — Normal vs Tuberculosis — from chest X-ray images            |
+| **Explainability**    | Grad-CAM heatmap shows which lung regions influenced the model's decision           |
+| **Medical Advisory**  | RAG pipeline retrieves WHO guidelines and generates structured medication guidance  |
+| **Full-Stack ML**     | End-to-end pipeline covering data, model, API, UI, containerisation, and deployment |
+| **Free Deployment**   | Entire app hosted publicly at zero cost on HuggingFace Spaces                       |
+| **Portfolio Quality** | Demonstrates ML, NLP, backend, frontend, and DevOps skills in one unified project   |
 
 ---
 
@@ -79,49 +77,53 @@ accessible to anyone in the world via a simple web link with zero infrastructure
 ## 🛠️ Tech Stack
 
 ### Machine Learning
-| Tool | Purpose |
-|---|---|
-| PyTorch + Torchvision | Model training and inference |
-| VGG16 (Transfer Learning) | TB binary classification, ImageNet backbone |
-| Grad-CAM | Visual explainability heatmap overlay |
-| Scikit-learn | Evaluation metrics — accuracy, F1, ROC-AUC, confusion matrix |
-| Google Colab (free T4 GPU) | Model training platform — no local GPU needed |
+
+| Tool                       | Purpose                                                      |
+| -------------------------- | ------------------------------------------------------------ |
+| PyTorch + Torchvision      | Model training and inference                                 |
+| VGG16 (Transfer Learning)  | TB binary classification, ImageNet backbone                  |
+| Grad-CAM                   | Visual explainability heatmap overlay                        |
+| Scikit-learn               | Evaluation metrics — accuracy, F1, ROC-AUC, confusion matrix |
+| Google Colab (free T4 GPU) | Model training platform — no local GPU needed                |
 
 ### RAG + LLM
-| Tool | Purpose |
-|---|---|
-| LangChain | RAG pipeline orchestration |
-| ChromaDB | Local vector database for WHO guideline embeddings |
-| sentence-transformers (all-MiniLM-L6-v2) | Text-to-vector embeddings, runs locally |
-| Groq API — LLaMA 3 8B | LLM for structured medication advice generation |
-| WHO TB Guidelines PDF | Primary RAG knowledge base source |
+
+| Tool                                     | Purpose                                            |
+| ---------------------------------------- | -------------------------------------------------- |
+| LangChain                                | RAG pipeline orchestration                         |
+| ChromaDB                                 | Local vector database for WHO guideline embeddings |
+| sentence-transformers (all-MiniLM-L6-v2) | Text-to-vector embeddings, runs locally            |
+| Groq API — LLaMA 3 8B                    | LLM for structured medication advice generation    |
+| WHO TB Guidelines PDF                    | Primary RAG knowledge base source                  |
 
 ### Backend
-| Tool | Purpose |
-|---|---|
-| FastAPI | Async REST API framework |
-| Uvicorn | ASGI server |
-| HuggingFace Hub | Remote model weight storage and auto-download |
-| python-multipart | Image file upload handling |
-| python-dotenv | Secure environment variable management |
+
+| Tool             | Purpose                                       |
+| ---------------- | --------------------------------------------- |
+| FastAPI          | Async REST API framework                      |
+| Uvicorn          | ASGI server                                   |
+| HuggingFace Hub  | Remote model weight storage and auto-download |
+| python-multipart | Image file upload handling                    |
+| python-dotenv    | Secure environment variable management        |
 
 ### Frontend & Visualisation
-| Tool | Purpose |
-|---|---|
+
+| Tool      | Purpose                               |
+| --------- | ------------------------------------- |
 | Streamlit | Full web UI — no HTML or CSS required |
-| Plotly | Interactive confidence score charts |
+| Plotly    | Interactive confidence score charts   |
 
 ### DevOps
-| Tool | Purpose |
-|---|---|
-| Docker + Docker Compose | Multi-service containerisation |
-| HuggingFace Spaces | Free cloud deployment for both services |
-| GitHub | Version control and code hosting |
+
+| Tool                    | Purpose                                 |
+| ----------------------- | --------------------------------------- |
+| Docker + Docker Compose | Multi-service containerisation          |
+| HuggingFace Spaces      | Free cloud deployment for both services |
+| GitHub                  | Version control and code hosting        |
 
 ---
 
 ## 📁 Project Structure
-
 
 tb-detector/
 │
@@ -154,11 +156,9 @@ tb-detector/
 ├── LICENSE
 └── README.md
 
-
 ---
 
 ## 🗺️ How It Works
-
 
 User uploads chest X-ray image
 ↓
@@ -188,40 +188,40 @@ text
 
 ## 📦 Dataset
 
-| Property | Detail |
-|---|---|
-| Name | Tuberculosis (TB) Chest X-ray Database |
-| Source | Kaggle |
-| Total Images | 4,200 |
-| TB Positive | 700 images |
-| Normal | 3,500 images |
-| Image Format | PNG — 512×512 pixels |
-| Cost | Free for research and educational use |
-| Link | kaggle.com/datasets/tawsifurrahman/tuberculosis-tb-chest-xray-dataset |
+| Property     | Detail                                                                |
+| ------------ | --------------------------------------------------------------------- |
+| Name         | Tuberculosis (TB) Chest X-ray Database                                |
+| Source       | Kaggle                                                                |
+| Total Images | 4,200                                                                 |
+| TB Positive  | 700 images                                                            |
+| Normal       | 3,500 images                                                          |
+| Image Format | PNG — 512×512 pixels                                                  |
+| Cost         | Free for research and educational use                                 |
+| Link         | kaggle.com/datasets/tawsifurrahman/tuberculosis-tb-chest-xray-dataset |
 
 ---
 
 ## 🧠 Model Details
 
-| Property | Detail |
-|---|---|
-| Architecture | VGG16 with Transfer Learning |
-| Pre-trained On | ImageNet |
-| Classification | Binary — Normal vs Tuberculosis |
-| Training Platform | Google Colab (T4 GPU, free tier) |
-| Optimizer | Adam, learning rate 1e-4 |
-| Epochs | 12 |
+| Property          | Detail                                                         |
+| ----------------- | -------------------------------------------------------------- |
+| Architecture      | VGG16 with Transfer Learning                                   |
+| Pre-trained On    | ImageNet                                                       |
+| Classification    | Binary — Normal vs Tuberculosis                                |
+| Training Platform | Google Colab (T4 GPU, free tier)                               |
+| Optimizer         | Adam, learning rate 1e-4                                       |
+| Epochs            | 12                                                             |
 | Data Augmentation | Horizontal flip, rotation ±15°, brightness and contrast jitter |
-| Expected Accuracy | 97–99% validation accuracy |
-| Model Storage | HuggingFace Hub (free, auto-downloaded at runtime) |
+| Expected Accuracy | 97–99% validation accuracy                                     |
+| Model Storage     | HuggingFace Hub (free, auto-downloaded at runtime)             |
 
 ---
 
 ## 🚀 Live Demo
 
-| Service | URL | Status |
-|---|---|---|
-| 🌐 Web App | `https://pankajrajoria-tb-detector-ui.hf.space` | 🔴 Not Deployed Yet |
+| Service     | URL                                                   | Status              |
+| ----------- | ----------------------------------------------------- | ------------------- |
+| 🌐 Web App  | `https://pankajrajoria-tb-detector-ui.hf.space`       | 🔴 Not Deployed Yet |
 | 🔧 API Docs | `https://pankajrajoria-tb-detector-api.hf.space/docs` | 🔴 Not Deployed Yet |
 
 ---
@@ -236,139 +236,132 @@ text
 
 ### Phase 1 — Setup & Accounts
 
-| Task | Status |
-|---|---|
-| GitHub account created | 🔴 Not Started |
-| Kaggle account created | 🔴 Not Started |
-| HuggingFace account created | 🔴 Not Started |
-| Groq API key obtained from console.groq.com | 🔴 Not Started |
-| VS Code installed | 🔴 Not Started |
-| Python 3.10+ installed and verified | 🔴 Not Started |
-| Docker Desktop installed and running | 🔴 Not Started |
-| Git installed and configured | 🔴 Not Started |
-| Project folder structure created | 🔴 Not Started |
+| Task                                             | Status         |
+| ------------------------------------------------ | -------------- |
+| Groq API key obtained from console.groq.com      | 🔴 Not Started |
+| Project folder structure created                 | 🔴 Not Started |
 | Python virtual environment created and activated | 🔴 Not Started |
-| All pip packages installed without errors | 🔴 Not Started |
-| `.env` file created with Groq API key | 🔴 Not Started |
-| `.gitignore` configured correctly | 🔴 Not Started |
-| GitHub repository created and initialised | 🔴 Not Started |
+| All pip packages installed without errors        | 🔴 Not Started |
+| `.env` file created with Groq API key            | 🔴 Not Started |
+| `.gitignore` configured correctly                | 🔴 Not Started |
+| GitHub repository created and initialised        | 🔴 Not Started |
 
 ---
 
 ### Phase 2 — Dataset & Model Training
 
-| Task | Status |
-|---|---|
-| TB chest X-ray dataset downloaded from Kaggle | 🔴 Not Started |
+| Task                                                           | Status         |
+| -------------------------------------------------------------- | -------------- |
+| TB chest X-ray dataset downloaded from Kaggle                  | 🔴 Not Started |
 | Dataset unzipped — Normal/ and Tuberculosis/ folders confirmed | 🔴 Not Started |
-| WHO TB Guidelines 2022 PDF downloaded from who.int | 🔴 Not Started |
-| PDF saved into data/guidelines/ folder | 🔴 Not Started |
-| Google Colab notebook opened with T4 GPU enabled | 🔴 Not Started |
-| Dataset uploaded to Google Drive and mounted in Colab | 🔴 Not Started |
-| Training script runs from start to finish without errors | 🔴 Not Started |
-| Model achieves more than 95% validation accuracy | 🔴 Not Started |
-| Best model weights saved as tb_model.pth | 🔴 Not Started |
-| HuggingFace model repository created | 🔴 Not Started |
-| tb_model.pth uploaded to HuggingFace Hub | 🔴 Not Started |
-| Model loads correctly from HF Hub on local machine | 🔴 Not Started |
+| WHO TB Guidelines 2022 PDF downloaded from who.int             | 🔴 Not Started |
+| PDF saved into data/guidelines/ folder                         | 🔴 Not Started |
+| Google Colab notebook opened with T4 GPU enabled               | 🔴 Not Started |
+| Dataset uploaded to Google Drive and mounted in Colab          | 🔴 Not Started |
+| Training script runs from start to finish without errors       | 🔴 Not Started |
+| Model achieves more than 95% validation accuracy               | 🔴 Not Started |
+| Best model weights saved as tb_model.pth                       | 🔴 Not Started |
+| HuggingFace model repository created                           | 🔴 Not Started |
+| tb_model.pth uploaded to HuggingFace Hub                       | 🔴 Not Started |
+| Model loads correctly from HF Hub on local machine             | 🔴 Not Started |
 
 ---
 
 ### Phase 3 — FastAPI Backend
 
-| Task | Status |
-|---|---|
-| ml/model.py loads model from HF Hub and runs prediction | 🔴 Not Started |
-| ml/gradcam.py returns valid heatmap as base64 string | 🔴 Not Started |
+| Task                                                       | Status         |
+| ---------------------------------------------------------- | -------------- |
+| ml/model.py loads model from HF Hub and runs prediction    | 🔴 Not Started |
+| ml/gradcam.py returns valid heatmap as base64 string       | 🔴 Not Started |
 | rag/ingest.py ingests WHO PDF into ChromaDB without errors | 🔴 Not Started |
-| ChromaDB populated and verified with correct chunk count | 🔴 Not Started |
+| ChromaDB populated and verified with correct chunk count   | 🔴 Not Started |
 | rag/query.py returns relevant WHO text via semantic search | 🔴 Not Started |
-| rag/query.py calls Groq and returns structured advice | 🔴 Not Started |
-| main.py /predict endpoint returns full JSON response | 🔴 Not Started |
-| Health check GET / returns status OK | 🔴 Not Started |
-| FastAPI /docs page accessible at localhost:8000 | 🔴 Not Started |
-| Backend tested with at least 5 different X-ray images | 🔴 Not Started |
+| rag/query.py calls Groq and returns structured advice      | 🔴 Not Started |
+| main.py /predict endpoint returns full JSON response       | 🔴 Not Started |
+| Health check GET / returns status OK                       | 🔴 Not Started |
+| FastAPI /docs page accessible at localhost:8000            | 🔴 Not Started |
+| Backend tested with at least 5 different X-ray images      | 🔴 Not Started |
 
 ---
 
 ### Phase 4 — RAG & LLM Quality
 
-| Task | Status |
-|---|---|
-| Semantic search returns relevant TB treatment chunks | 🔴 Not Started |
-| LLM response includes result meaning, next steps, and RIPE regimen | 🔴 Not Started |
+| Task                                                                | Status         |
+| ------------------------------------------------------------------- | -------------- |
+| Semantic search returns relevant TB treatment chunks                | 🔴 Not Started |
+| LLM response includes result meaning, next steps, and RIPE regimen  | 🔴 Not Started |
 | Low confidence under 70% triggers extra caution warning in response | 🔴 Not Started |
-| Disclaimer always present at the end of every response | 🔴 Not Started |
-| TB detected case tested and advice is accurate | 🔴 Not Started |
-| Normal result case tested and advice is appropriate | 🔴 Not Started |
+| Disclaimer always present at the end of every response              | 🔴 Not Started |
+| TB detected case tested and advice is accurate                      | 🔴 Not Started |
+| Normal result case tested and advice is appropriate                 | 🔴 Not Started |
 
 ---
 
 ### Phase 5 — Streamlit Frontend
 
-| Task | Status |
-|---|---|
-| Streamlit app runs at localhost:8501 | 🔴 Not Started |
-| Image upload accepts JPG and PNG files | 🔴 Not Started |
-| Three-column layout renders correctly after upload | 🔴 Not Started |
-| Original X-ray image displays in column 1 | 🔴 Not Started |
-| Grad-CAM heatmap displays in column 2 with caption | 🔴 Not Started |
-| Plotly confidence bar chart renders in column 3 | 🔴 Not Started |
+| Task                                                      | Status         |
+| --------------------------------------------------------- | -------------- |
+| Streamlit app runs at localhost:8501                      | 🔴 Not Started |
+| Image upload accepts JPG and PNG files                    | 🔴 Not Started |
+| Three-column layout renders correctly after upload        | 🔴 Not Started |
+| Original X-ray image displays in column 1                 | 🔴 Not Started |
+| Grad-CAM heatmap displays in column 2 with caption        | 🔴 Not Started |
+| Plotly confidence bar chart renders in column 3           | 🔴 Not Started |
 | Result label is colour-coded green for Normal, red for TB | 🔴 Not Started |
-| Medical advisory text displays in info box below columns | 🔴 Not Started |
-| Medical disclaimer shown prominently at top of page | 🔴 Not Started |
-| Error message displays clearly if API is unreachable | 🔴 Not Started |
+| Medical advisory text displays in info box below columns  | 🔴 Not Started |
+| Medical disclaimer shown prominently at top of page       | 🔴 Not Started |
+| Error message displays clearly if API is unreachable      | 🔴 Not Started |
 
 ---
 
 ### Phase 6 — Docker
 
-| Task | Status |
-|---|---|
-| backend/Dockerfile builds without errors | 🔴 Not Started |
-| frontend/Dockerfile builds without errors | 🔴 Not Started |
-| docker-compose up --build starts both services cleanly | 🔴 Not Started |
-| Full app accessible at localhost:8501 inside Docker | 🔴 Not Started |
+| Task                                                        | Status         |
+| ----------------------------------------------------------- | -------------- |
+| backend/Dockerfile builds without errors                    | 🔴 Not Started |
+| frontend/Dockerfile builds without errors                   | 🔴 Not Started |
+| docker-compose up --build starts both services cleanly      | 🔴 Not Started |
+| Full app accessible at localhost:8501 inside Docker         | 🔴 Not Started |
 | Environment variables pass correctly through Docker Compose | 🔴 Not Started |
-| App tested successfully from mobile device on same WiFi | 🔴 Not Started |
+| App tested successfully from mobile device on same WiFi     | 🔴 Not Started |
 
 ---
 
 ### Phase 7 — Deployment
 
-| Task | Status |
-|---|---|
-| All code pushed to GitHub repository | 🔴 Not Started |
-| HuggingFace Space 1 created: tb-detector-api with Docker SDK | 🔴 Not Started |
-| GROQ_API_KEY secret added to HF Space 1 settings | 🔴 Not Started |
-| HF_MODEL_REPO secret added to HF Space 1 settings | 🔴 Not Started |
-| Backend code pushed to HF Space 1 | 🔴 Not Started |
-| Backend builds successfully on HuggingFace | 🔴 Not Started |
-| Backend API live and reachable at .hf.space URL | 🔴 Not Started |
+| Task                                                           | Status         |
+| -------------------------------------------------------------- | -------------- |
+| All code pushed to GitHub repository                           | 🔴 Not Started |
+| HuggingFace Space 1 created: tb-detector-api with Docker SDK   | 🔴 Not Started |
+| GROQ_API_KEY secret added to HF Space 1 settings               | 🔴 Not Started |
+| HF_MODEL_REPO secret added to HF Space 1 settings              | 🔴 Not Started |
+| Backend code pushed to HF Space 1                              | 🔴 Not Started |
+| Backend builds successfully on HuggingFace                     | 🔴 Not Started |
+| Backend API live and reachable at .hf.space URL                | 🔴 Not Started |
 | HuggingFace Space 2 created: tb-detector-ui with Streamlit SDK | 🔴 Not Started |
-| API_URL secret added to HF Space 2 pointing to backend URL | 🔴 Not Started |
-| Frontend code pushed to HF Space 2 | 🔴 Not Started |
-| Frontend builds and loads successfully | 🔴 Not Started |
-| Full app tested from a phone on 4G mobile data | 🔴 Not Started |
-| README updated with both live .hf.space URLs | 🔴 Not Started |
-| Project made public and shared 🎉 | 🔴 Not Started |
+| API_URL secret added to HF Space 2 pointing to backend URL     | 🔴 Not Started |
+| Frontend code pushed to HF Space 2                             | 🔴 Not Started |
+| Frontend builds and loads successfully                         | 🔴 Not Started |
+| Full app tested from a phone on 4G mobile data                 | 🔴 Not Started |
+| README updated with both live .hf.space URLs                   | 🔴 Not Started |
+| Project made public and shared 🎉                              | 🔴 Not Started |
 
 ---
 
 ## 💰 Total Cost
 
-| Service | Cost |
-|---|---|
-| Google Colab — T4 GPU for training | Free |
-| Kaggle — TB chest X-ray dataset | Free |
-| WHO TB Guidelines PDF | Free |
-| All Python libraries (PyTorch, FastAPI, LangChain, etc.) | Free |
-| HuggingFace Hub — model weight storage | Free |
-| ChromaDB — local vector database | Free |
-| Groq API — LLaMA 3 LLM inference | Free |
-| HuggingFace Spaces × 2 — live hosting | Free |
-| GitHub — code repository | Free |
-| **Total** | **$0** |
+| Service                                                  | Cost   |
+| -------------------------------------------------------- | ------ |
+| Google Colab — T4 GPU for training                       | Free   |
+| Kaggle — TB chest X-ray dataset                          | Free   |
+| WHO TB Guidelines PDF                                    | Free   |
+| All Python libraries (PyTorch, FastAPI, LangChain, etc.) | Free   |
+| HuggingFace Hub — model weight storage                   | Free   |
+| ChromaDB — local vector database                         | Free   |
+| Groq API — LLaMA 3 LLM inference                         | Free   |
+| HuggingFace Spaces × 2 — live hosting                    | Free   |
+| GitHub — code repository                                 | Free   |
+| **Total**                                                | **$0** |
 
 > **Note:** HuggingFace free Spaces sleep after approximately 15 minutes of
 > inactivity. The first request after sleep takes around 30 seconds to wake
@@ -378,7 +371,7 @@ text
 
 ## 🏃 Quickstart (Run Locally)
 
-```bash
+````bash
 # 1. Clone this repository
 git clone https://github.com/pankajrajoria/tb-detector.git
 cd tb-detector
@@ -417,3 +410,4 @@ please consider giving it a ⭐ on GitHub!
 
 </div> ```
 
+````
